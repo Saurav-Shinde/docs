@@ -1,0 +1,132 @@
+---
+title: "Recipe Management"
+---
+
+On the **Admin Dashboard**, there are two buttons:
+
+- **Add Recipe**
+- **Update Recipe**
+
+These are used to create and maintain the costing structure of dishes.
+
+Recipes in the system are divided into:
+
+- **Sub Recipes** → internal components (sauces, gravies, dough, premixes, etc.)
+- **Main Recipes** → final sellable dishes
+
+> Important: Sub Recipes must always be created before the Main Recipe.
+
+---
+
+## Add Recipe
+
+When the admin clicks **Add Recipe**, a form opens.
+
+### Step 1 — Basic Details
+
+Admin must first enter:
+
+- **Brand** → Select the brand for which recipe is being created
+- **Recipe Name**
+- **Recipe Type**
+  - Sub Recipe
+  - Main Recipe
+
+---
+
+## Creating Sub Recipes (First Step Always)
+
+Before creating a main dish, admin must create all required sub recipes.
+
+Example structure:
+
+Main Dish → Paneer Butter Masala\
+Uses → Gravy\
+Gravy Uses → Base Masala Paste
+
+So the order must be:
+
+1. Base Masala Paste (Sub Recipe)
+2. Gravy (Sub Recipe)
+3. Paneer Butter Masala (Main Recipe)
+
+---
+
+### Sub Recipe Fields
+
+While creating a Sub Recipe, admin fills the following rows:
+
+| Field          | Description                     |
+| :------------- | :------------------------------ |
+| Type           | Ingredient or Sub Recipe        |
+| Yield          | Output quantity produced        |
+| Category (Cat) | Food / Packaging classification |
+| Item           | Ingredient or Subrecipe name    |
+| Specification  | Size or variant                 |
+| Brand          | Supplier brand                  |
+| Qty            | Quantity used                   |
+| UOM            | Unit (gm, kg, ml, pcs etc)      |
+| Price          | Unit price                      |
+| Total          | Auto calculated cost            |
+
+---
+
+### Adding Multiple Ingredients
+
+There is a **Add Row** button.
+
+Admin can:
+
+- Add multiple ingredients
+- Add subrecipes inside subrecipes
+- Build nested costing structure
+
+After entering all rows → Click **Save Sub Recipe**
+
+---
+
+## Creating Main Recipe
+
+After all subrecipes are created:
+
+1. Select **Recipe Type = Main Recipe**
+2. Previously created subrecipes appear in dropdown
+3. Add them like ingredients
+4. Fill remaining ingredient rows if needed
+5. Click **Save**
+
+Now the dish becomes available in system costing.
+
+---
+
+## Update Recipe
+
+When admin clicks **Update Recipe**, a recipe editor opens.
+
+### Layout
+
+Left Side:
+
+- List of all Main Recipes
+- List of all Sub Recipes
+
+Right Side:
+
+- Editable recipe form
+
+---
+
+### Editing Capabilities
+
+Admin can open any recipe and modify:
+
+- Add ingredient
+- Delete ingredient
+- Change quantity
+- Update price
+- Replace subrecipe
+- Fix mistakes made during creation
+
+After editing → Click **Save**
+
+Changes are immediately stored in database.

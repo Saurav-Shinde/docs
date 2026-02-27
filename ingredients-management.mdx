@@ -1,0 +1,53 @@
+---
+title: "Ingredients Management"
+---
+
+On the **Admin Dashboard**, there is a button called **Update Ingredients**.
+
+When the admin clicks this button, a new window opens showing the **Ingredient Price Management Panel**.
+
+This panel is used whenever market prices of raw materials increase or decrease.
+
+---
+
+## What the Admin Sees
+
+The window displays a list of all ingredients used across all recipes:
+
+- Ingredient Name
+- Current Price (existing cost in system)
+- Percentage Input Box
+- New Calculated Price (auto calculated)
+
+This data is collected from **all Main Recipes and Sub Recipes** in the system.
+
+---
+
+## Updating Ingredient Prices
+
+When market prices change, the admin can adjust the ingredient cost using percentage instead of manually editing every recipe.
+
+### Steps
+
+1. Locate the ingredient in the list
+2. Enter percentage change in the input box
+   - Positive value → price increase
+   - Negative value → price decrease
+3. System automatically calculates the new price
+4. Repeat for multiple ingredients if required
+5. Click **Save**
+
+---
+
+## After Clicking Save
+
+When the admin clicks **Save**:
+
+- Ingredient price is updated in database
+- All recipes using that ingredient are updated automatically
+- Costing of dishes recalculates using new ingredient price
+- Future orders use updated pricing
+
+No manual recipe editing is required.
+
+---

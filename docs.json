@@ -9,80 +9,58 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
+  "tabs": [
+    {
+      "tab": "Admin Guide",
+      "groups": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "group": "Operations",
+          "pages": [
+            "admin/orders-management",
+            "admin/recipe-management",
+            "admin/ingredients-management",
+            "admin/wallet-service-management"
+          ]
+        }
+      ]
+    },
+    {
+      "tab": "Client Guide",
+      "groups": [
+        {
+          "group": "Getting Started",
+          "pages": [
+            "client/login",
+            "client/eligibility-form"
+          ]
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "group": "Usage",
+          "pages": [
+            "client/services",
+            "client/make-order",
+            "client/wallet-payment",
+            "client/analysis",
+            "client/schedule-meeting"
+          ]
+        }
+      ]
+    },
+    {
+      "tab": "Vendor Guide",
+      "groups": [
+        {
+          "group": "Vendor",
+          "pages": [
+            "vendor/login",
+            "vendor/eligibility",
+            "vendor/product-management"
+          ]
         }
       ]
     }
-  },
+  ]
+},
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
